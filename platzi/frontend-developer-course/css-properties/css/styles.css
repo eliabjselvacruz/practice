@@ -1,0 +1,34 @@
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background: blue;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  text-align: center;
+  color: white;
+}
+
+.card :nth-child(3) {
+  color: black;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
