@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background: pink;
+  font-size: 16px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.container  {
+  background: plum;
+  width: 100vw;
+  height: 100vh;
+}
