@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-  <title>Menu</title>
+  <title>Menu Mobile</title>
   <style>
     :root {
       --white: #FFFFFF;
@@ -25,6 +25,10 @@
     }
     .mobile-menu {
       padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
     }
     .mobile-menu a {
       text-decoration: none;
@@ -46,9 +50,15 @@
       font-size: var(--sm);
       font-weight: 300 !important;
     }
-    .sign-out {
+    .mobile-menu .sign-out {
       font-size: var(--sm);
-      color: var(--hospital-green) !important;
+      color: var(--hospital-green);
+    }
+
+    @media (max-width: 640px){
+      .mobile-menu ul:last-child {
+        margin-bottom: 48px;
+      }
     }
   </style>
 </head>
