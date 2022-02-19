@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/logos/favicon_bota_fora.svg" type="img">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Password</title>
+  <style>
+    :root {
+      --very-ligth-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --white: #FFFFFF;
+      --black: #000000;
+      --dark: #232830;
+      --sm: 12px;
+      --md: 16px;
+      --lg: 18px;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+    }
+
+    .login {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .form-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 300px;
+    }
+
+    .title {
+      font-size: var(--lg);
+      margin-bottom: 24px;
+      text-align: start;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .label {
+      font-size: var(--sm);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      color: var(--very-ligth-pink);
+      font-size: var(--md);
+      margin: 8px 0 32px 0;
+    }
+
+    .secondary-button {
+      border: 1px solid var(--hospital-green);
+      border-radius: 8px;
+      background-color: var(--white);
+      color: var(--hospital-green);
+      width: 100%;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+    }
+
+    .login-button {
+      margin-top: 16px;
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: 640px) {
+      .logo {
+        display: block;
+      }
+
+      .form-container {
+        height: 100%;
+      }
+
+      .form {
+        height: 100%;
+        justify-content: space-between;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login">
+    <div class="form-container">
+      <h1 class="title">My Account</h1>
+      <form action="/" class="form">
+        <div class="">
+          <label for="name" class="label">Name</label>
+          <p class="value">Eliab Selva</p>
+          <label for="email" class="label">Email Address</label>
+          <p class="value">eliab@gmail.com</p>
+          <label for="new-password" class="label">Password</label>
+          <p class="value">********</p>
+        </div>
+        <input type="submit" class="secondary-button login-button" value="Edit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
