@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-  <title>Email</title>
+  <title>Login</title>
   <style>
     :root {
       --very-ligth-pink: #C7C7C7;
@@ -37,7 +37,6 @@
       display: grid;
       grid-template-rows: auto 1fr auto;
       width: 300px;
-      justify-items: center;
     }
 
     .logo {
@@ -47,47 +46,37 @@
       display: none;
     }
 
-    .title {
-      font-size: var(--lg);
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    .subtitle {
-      color: var(--very-ligth-pink);
-      font-size: var(--md);
-      font-weight: 300;
-      margin-top: 0;
-      margin-bottom: 32px;
-      text-align: center;
-    }
-
-    .email-image {
-      width: 132px;
-      height: 132px;
-      border-radius: 50%;
-      background-color: var(--text-input-field);
+    .form {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 24px;
+      flex-direction: column;
     }
 
-    .email-image img{
-      width: 80px;
-    }
-
-    .resend {
-      font-size: var(--sm);
-    }
-
-    .resend span {
-      color: var(--very-ligth-pink);
-    }
-
-    .resend a {
+    .form a {
       color: var(--hospital-green);
+      font-size: var(--sm);
       text-decoration: none;
+      margin-bottom: 52px;
+      text-align: center;
+    }
+
+    .label {
+      font-size: var(--sm);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .input {
+      background-color: var(--text-input-field);
+      border: none;
+      border-radius: 8px;
+      height: 32;
+      font-size: var(--md);
+      padding: 6px;
+      margin-bottom: 12px;
+    }
+
+    .input-email{
+      margin-bottom: 24px;
     }
 
     .primary-button {
@@ -95,6 +84,18 @@
       border-radius: 8px;
       background-color: var(--hospital-green);
       color: var(--white);
+      width: 100%;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+    }
+
+    .secondary-button {
+      border: 1px solid var(--hospital-green);
+      border-radius: 8px;
+      background-color: var(--white);
+      color: var(--hospital-green);
       width: 100%;
       cursor: pointer;
       font-size: var(--md);
@@ -111,6 +112,13 @@
       .logo {
         display: block;
       }
+
+      .secondary-button {
+        width: inherit;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 24px;
+      }
     }
 
   </style>
@@ -119,16 +127,15 @@
   <div class="login">
     <div class="form-container">
       <img src="../assets/logos/logo_yard_sale.svg" alt="logo" class="logo"></img>
-      <h1 class="title">Email has bee sent!</h1>
-      <p class="subtitle">Please check your imbox for instructions on how to reset the password.</p>
-      <div class="email-image">
-        <img src="../assets/icons/email.svg" alt="email image">
-      </div>
-      <button class="primary-button login-button">Login</button>
-      <p class="resend">
-        <span>Didn't receive the email?</span>
-        <a href="/">Reset</a>
-      </p>
+      <form action="/" class="form">
+        <label for="email-address" class="label">Email Address</label>
+        <input type="text" name="" id="email-address" placeholder="eliab@email.com" class="input input-email">
+        <label for="new-password" class="label">Password</label>
+        <input type="password" name="" id="new-password" placeholder="********" class="input">
+        <input type="submit" class="primary-button login-button" value="Login">
+        <a href="#">Forgot my password</a>
+      </form>
+      <button class="secondary-button signup-button">Sign Up</button>
     </div>
   </div>
 </body>
