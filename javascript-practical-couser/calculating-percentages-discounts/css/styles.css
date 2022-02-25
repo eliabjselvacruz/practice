@@ -1,0 +1,60 @@
+body {
+  font-family: Lato;
+}
+
+h3 {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  height: 240px;
+  background-color: palegreen;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.entrada {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+
+.entrada label{
+  font-weight: 300;
+}
+
+.entrada input {
+  margin-top: 8px;
+  border: none;
+  height: 20px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.btn {
+  margin: 32px 0 12px 0;
+  border-style: none;
+  border: solid 1px #ccc;
+  height: 28px;
+  border-radius: 4px;
+  color: #838282;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+} 
