@@ -108,3 +108,4 @@ function* helloWorld(){
 const gHello = helloWorld();
 console.log(gHello.next().value);
 console.log(gHello.next().value);
+
