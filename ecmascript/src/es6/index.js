@@ -1,3 +1,5 @@
+import myHello from "./module";
+
 //Params
 function newFunction(name, age, country){
   var name = name;
@@ -78,3 +80,31 @@ helloPromise()
   .then((response)=>{console.log(response)})
   .then(()=>{console.log("Other then")})
   .catch((error)=>{console.log(error)});
+
+
+class calculator {
+  constructor (){
+    this.valA = 0;
+    this.valB = 0;
+  }
+  sum(a,b){
+    this.valA = a;
+    this.valB = b;
+    return this.valA+this.valB;
+  }
+}
+
+const calc = new calculator();
+console.log(calc.sum(4,4));
+
+myHello();
+
+//Generator
+function* helloWorld(){
+  if(true){ yield "Hello "}
+  if(true){ yield "World "}
+}
+
+const gHello = helloWorld();
+console.log(gHello.next().value);
+console.log(gHello.next().value);
