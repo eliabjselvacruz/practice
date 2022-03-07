@@ -1,0 +1,11 @@
+{
+  "name": "asynchrony",
+  "version": "1.0.0",
+  "description": "Practicin asynchrony.",
+  "main": "index.js",
+  "scripts": {
+    "callback": "node src/callback/index.js"
+  },
+  "author": "Eliab Javier Selva Cruz",
+  "license": "ISC"
+}
