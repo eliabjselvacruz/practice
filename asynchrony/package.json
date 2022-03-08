@@ -4,7 +4,8 @@
   "description": "Practicin asynchrony.",
   "main": "index.js",
   "scripts": {
-    "callback": "node src/callback/index.js"
+    "callback": "node src/callback/index.js",
+    "callback:challenge": "node src/callback/challenge.js"
   },
   "author": "Eliab Javier Selva Cruz",
   "license": "ISC",
