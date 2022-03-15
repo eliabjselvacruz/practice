@@ -8,7 +8,8 @@
     "callback:challenge": "node src/callback/challenge.js",
     "promise": "node src/promise/index.js",
     "promise:challenge": "node src/promise/challenge.js",
-    "async": "node src/async/index.js"
+    "async": "node src/async/index.js",
+    "async:challenge": "node src/async/challenge.js"
   },
   "author": "Eliab Javier Selva Cruz",
   "license": "ISC",
